@@ -26,14 +26,14 @@ public class HelloRxJavaFlowableCreateLamdaExample {
                     // 데이터 발행 완료를 알린다
                     emitter.onComplete();
                 }, BackpressureStrategy.BUFFER);
-        
-        flowable.observeOn(Schedulers.computation())
+
+        /*flowable.observeOn(Schedulers.computation())
                 .subscribe(
                         data -> Logger.log(LogType.ON_NEXT, data),
                         error -> Logger.log(LogType.ON_ERROR, error),
                         () -> Logger.log(LogType.ON_COMPLETE),
                         subscription -> subscription.request(Long.MAX_VALUE));
 
-        Thread.sleep(500L);
+        Thread.sleep(500L);*/
     }
 }
