@@ -32,8 +32,8 @@ public class HelloRxJavaFlowableCreateLamdaExample {
                         data -> Logger.log(LogType.ON_NEXT, data),
                         error -> Logger.log(LogType.ON_ERROR, error),
                         () -> Logger.log(LogType.ON_COMPLETE),
-                        subscription -> subscription.request(Long.MAX_VALUE));
+                        subscription -> subscription.request(Long.MAX_VALUE));*/
 
-        Thread.sleep(500L);*/
+        Thread.sleep(500L);
     }
 }

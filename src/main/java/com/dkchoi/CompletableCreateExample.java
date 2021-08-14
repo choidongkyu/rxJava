@@ -7,6 +7,8 @@ import io.reactivex.rxjava3.core.CompletableObserver;
 import io.reactivex.rxjava3.core.CompletableOnSubscribe;
 import io.reactivex.rxjava3.disposables.Disposable;
 
+import java.util.function.Consumer;
+
 public class CompletableCreateExample {
     public static void main(String[] args) {
         Completable completable = Completable.create(new CompletableOnSubscribe() {
